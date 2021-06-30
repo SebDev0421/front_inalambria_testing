@@ -15,10 +15,12 @@ const Login = () =>{
 	let [email,setEmail] = useState('');
 	let [password,setPassword] = useState('');
 
-	const getCookies = ()=>{
+	const getCookies = async()=>{
 		console.log(cookies.credentials)
-		if(cookies.credentials.name !== undefined){
-		  window.location.href = "/banner"
+		if(await cookies.credentials === 'undefined' || await cookies.credentials === undefined){
+		  return true
+		}else{
+			window.location.href = "/banner"
 		}
 	  }
 	
