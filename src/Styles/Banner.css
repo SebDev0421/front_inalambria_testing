@@ -1,0 +1,26 @@
+.containerBanner{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerBanner .getOutSessionButton{
+    width: 60%;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0404c5c2;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+.containerBanner .getOutSessionButton:hover{
+    cursor: pointer;
+}

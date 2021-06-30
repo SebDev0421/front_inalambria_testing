@@ -1,24 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
 
+import { useCookies } from 'react-cookie'
+
+import React ,{useEffect} from 'react';
+
+import{
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom"
+
+
+import Login from './Views/Login';
+import Register from './Views/Register';
+import Banner from './Views/Banner';
+import NoMatch from './Views/NoMatch';
+
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+     <div>
+       <Switch>
+         <Route exact path ="/">
+           <Login/>
+         </Route>
+         <Route path ="/register">
+           <Register/>
+         </Route>
+         <Route path ="/banner">
+           <Banner/>
+         </Route>
+         <Route path ="*">
+           <NoMatch/>
+         </Route>
+       </Switch>
+     </div>
+    </Router>
   );
 }
 

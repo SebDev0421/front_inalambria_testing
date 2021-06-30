@@ -1,0 +1,96 @@
+.containerLogin{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Images/front-view-of-beautiful-dog-with-copy-space.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+}
+
+.containerLogin .containerInput{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.containerInput .boxCredentials{
+    background-color: white;
+    width: 80%;
+    min-width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px -6px black;
+    flex-direction: column;
+}
+
+.boxCredentials #emailField{
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 0.1px;
+}
+
+.boxCredentials .passwordField{
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border:gray solid 0.1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.passwordField input{
+    border-color: white;
+    border-width: 0px;
+    outline: none;
+    height: 37px;
+    width: 85%;
+
+}
+
+.boxCredentials .buttonLogIn{
+    width: 90%;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0404c5c2;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+.boxCredentials .buttonLogIn:hover{
+    cursor: pointer;
+}
+
+.boxCredentials .buttonSingUp{
+    width: 90%;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f870bfc2;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+.boxCredentials .buttonSingUp:hover{
+    cursor: pointer;
+}

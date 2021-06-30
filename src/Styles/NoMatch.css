@@ -1,0 +1,22 @@
+.containerNoMatch{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Images/cute-little-dog-isolated-on-yellow.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerNoMatch h1{
+    font-size: 80px;
+    color: rgb(132, 0, 255);
+}
+
+
+.containerNoMatch h2{
+    font-size: 45px;
+    color: rgb(218, 66, 66);
+}
