@@ -20,7 +20,7 @@ const getAuth = (name,email,password,confirmPassword)=>{
 		 }else{
 			 if(res.response){
 				 console.log(res.response)
-				 window.location.href = "/"
+				 window.location.href = "/login"
 			 }
 		 }
 		 

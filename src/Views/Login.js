@@ -33,7 +33,7 @@ const Login = () =>{
 				'Content-Type':'application/json'
 			}
 		}).then(res => res.json())
-		 .then(res =>{
+		 .then(res =>{	
 			 if(res.status === 400){
 				 alert(res.message)
 			 }else{

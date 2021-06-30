@@ -28,7 +28,7 @@ const Banner = () =>{
                     onClick={()=>{
                         //forget cookies and redirect to login
                         setCookie('credentials',undefined,{path:'/'});
-                        window.location.href="/"
+                        window.location.href="/login"
                     }}
                 >
                     Cerrar sesion
